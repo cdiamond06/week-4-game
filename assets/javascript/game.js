@@ -27,9 +27,9 @@ console.log(numberOptions);
 
 // this function resets what whent the game is done. 
 function reset(){
-	var counter = 0;
-	var computerTotal = Math.floor(Math.random()*120)+19;
-	var numberOptions = [];
+	counter = 0;
+	computerTotal = Math.floor(Math.random()*120)+19;
+	numberOptions = [];
 	function random (arry){
 	for(var i = 0; i < 4; i++){
 		arry.push(Math.floor(Math.random()*12)+1);
