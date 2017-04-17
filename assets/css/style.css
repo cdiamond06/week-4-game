@@ -16,6 +16,7 @@ p{
 
 .panel{
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 #header{
@@ -48,8 +49,8 @@ p{
 */
 
 .office-image{
-	height:70px;
-	width:75px;
+	height:90px;
+	width:85px;
 	margin-right: 25px;
 }
 #total{

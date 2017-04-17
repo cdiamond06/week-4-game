@@ -22,9 +22,8 @@ function random (arry){
 	return arry;
 }
 // use the function to finally add our random numbers to the var
-random(numberOptions);
-console.log(numberOptions);
 
+random(numberOptions);
 console.log(numberOptions);
 
 // this function resets what whent the game is done. 
@@ -35,7 +34,12 @@ function reset(){
 	console.log(numberOptions);
 	$('#score').text(counter);
 	$('#computer-number').text(computerTotal);
+	$('#dwight').attr("data-imageOfficeValue", numberOptions[0]);
+	$('#jim').attr("data-imageOfficeValue", numberOptions[1]);
+	$('#michael').attr("data-imageOfficeValue", numberOptions[2]);
+	$('#pam').attr("data-imageOfficeValue", numberOptions[3]);
 } // end of reset function
+
 
 $('#computer-number').text(computerTotal);
 
@@ -48,12 +52,16 @@ for(var i = 0; i < numberOptions.length; i++){
 
 	if(i === 0){
 		imageOffice.attr("src", "assets/images/dwight.png");
+		imageOffice.attr("id", "dwight");
 	} else if(i ===1){
 			imageOffice.attr("src", "assets/images/jim.png");
+			imageOffice.attr("id", "jim");
 		} else if(i === 2){
 				imageOffice.attr("src", "assets/images/michael.png");
+				imageOffice.attr("id", "michael");
 			} else{
 					imageOffice.attr("src", "assets/images/pam.png");
+					imageOffice.attr("id", "pam");
 			} // else of the if and else statements
 
 	// A data value will be assoicated with each image
@@ -66,6 +74,7 @@ for(var i = 0; i < numberOptions.length; i++){
 
 // start of the click function to start the game
 $('.office-image').on("click", function(){
+
 	// we are creating a variable that will take in whatever the clicked on event was
 	// and will assign it to officevale
 	var officeValue = ($(this).attr("data-imageOfficeValue"));
@@ -82,7 +91,7 @@ $('.office-image').on("click", function(){
 		wins++;
 		$('#wins-number').text("Wins: " + wins);
 			alert("you win!!!!")
-		reset();
+			reset();
 		}
 		else if( counter >= computerTotal){
 			loss++;
