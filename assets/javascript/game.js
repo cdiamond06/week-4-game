@@ -10,18 +10,20 @@ console.log(computerTotal);
 var counter = 0;
 
 // This creates a variable array that will add a random number for each thumbnail
-var numberOptions = [];
+var numberOptions = [0,0,0,0];
 // counts the number of wins and losses
 var wins = 0;
 var loss = 0;
 
 function random (arry){
-	for(var i = 0; i < 4; i++){
-		arry.push(Math.floor(Math.random()*12)+1);
+	for(var i = 0; i < arry.length; i++){
+		arry[i] = (Math.floor(Math.random()*12)+1);
 	}
+	return arry;
 }
 // use the function to finally add our random numbers to the var
 random(numberOptions);
+console.log(numberOptions);
 
 console.log(numberOptions);
 
@@ -29,12 +31,8 @@ console.log(numberOptions);
 function reset(){
 	counter = 0;
 	computerTotal = Math.floor(Math.random()*120)+19;
-	numberOptions = [];
-	function random (arry){
-	for(var i = 0; i < 4; i++){
-		arry.push(Math.floor(Math.random()*12)+1);
-		} // end of for loop
-	} // end of function
+	random(numberOptions);
+	console.log(numberOptions);
 	$('#score').text(counter);
 	$('#computer-number').text(computerTotal);
 } // end of reset function
