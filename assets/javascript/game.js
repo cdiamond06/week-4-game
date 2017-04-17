@@ -51,16 +51,16 @@ for(var i = 0; i < numberOptions.length; i++){
 	imageOffice.addClass("office-image");
 
 	if(i === 0){
-		imageOffice.attr("src", "assets/images/dwight.png");
+		imageOffice.attr("src", "assets/images/dwight.GIF");
 		imageOffice.attr("id", "dwight");
 	} else if(i ===1){
-			imageOffice.attr("src", "assets/images/jim.png");
+			imageOffice.attr("src", "assets/images/jim.GIF");
 			imageOffice.attr("id", "jim");
 		} else if(i === 2){
-				imageOffice.attr("src", "assets/images/michael.png");
+				imageOffice.attr("src", "assets/images/michael.GIF");
 				imageOffice.attr("id", "michael");
 			} else{
-					imageOffice.attr("src", "assets/images/pam.png");
+					imageOffice.attr("src", "assets/images/pam.GIF");
 					imageOffice.attr("id", "pam");
 			} // else of the if and else statements
 
