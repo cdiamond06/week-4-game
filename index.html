@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+  <title>The Office Game</title>
+  
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<!-- CSS link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+  <div class ="container">
+    <div class = "row">
+     <div class = "col-md-6">
+      <!-- The Header -->
+       <div class="panel panel-default" id= "header">
+          <div class="panel-body">
+            <h2 class="text-center"> Office Collection </h2>  
+          </div>
+        </div>
+    
+      <!-- Middle sections explaining the rules -->
+      <div class="panel panel-default" id="rules">
+          <div class="panel-body">
+            <h2 class="text-center"> Rules of the game </h2>  
+          </div>
+          <p> You will be given a random number at the start of the game.</p>
+          <p> There are four characters below.By clicking on the character, you will add a specific amount of points to your  total score.</p>
+          <p> You win the game by mathcing your total score to random number, you lose the game if your total score goes above the random number. </p>
+          <p> the value of each character is hidden from you until you click on it</p>
+          <p> Each time whent the game starts, the game will allow change the values of each crystals </p>
+      </div>
+
+      <!-- Secion with the number and wins and losses -->
+  <div class = "row">
+    <div class = "col-md-6">
+    <!-- The made up number -->
+      <div class="panel panel-default" id= "comp-rand">
+          <div class="panel-body">
+            <h2 class="text-center" id ="computer-number"> ??? </h2>  
+          </div>
+      </div>
+    </div>
+    <!-- The wins and losses section -->
+        <div class = "col-md-6">
+    <!-- The made up number -->
+      <div class="panel panel-default" id= "win-loss">
+          <div class="panel-body">
+            <h2 class="text-center" id ="wins-number"> Wins: 0 </h2>  
+            <h2 class="text-center" id ="loss-number"> Losses: 0 </h2>  
+          </div>
+      </div>
+    </div>
+   </div> 
+
+   <!-- Start of the picture secion -->
+
+   <div id="pictures">
+   </div>
+   <!-- 
+ <div class="row">
+ First picture 
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail dwight-pic">
+      <img src="assets/images/dwight.png" alt="dwight" id="pic">
+    </a>
+  </div>
+  second Picture -->
+   <!-- 
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail jim-pic">
+      <img src="assets/images/jim.png" alt="jim" id="pic">
+    </a>
+      -->
+    <!-- third Picture 
+  </div>
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail michael-pic">
+      <img src="assets/images/michael.png" alt="michael" id = "pic">
+    </a>
+  </div>
+   fourth picture 
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail pam-pic">
+      <img src="assets/images/pam.png" alt="pam" id = "pic">
+    </a>
+  </div>
+  
+  <this is the end of the row for the picture section 
+  </div>
+   -->
+  <!-- start of the total score -->
+      <div class="col-md-6 ">
+      <div class="panel panel-default" id="total">
+          <div class="panel-body">
+            <h2 class="text-center" > Your total score is </h2>  
+          </div>
+      </div>
+
+   <!-- The total score section -->
+      <div class="col-md-6 ">   
+      <div class="panel panel-default" id="total-score">
+          <div class="panel-body">
+            <h2 class="text-center" id="score" > ..... </h2>  
+          </div>
+      </div>
+  
+<!-- This div is the end of col - md- 6 -->
+  </div> 
+  
+
+
+  <!-- this div is the end of the Row 1 -->
+  </div>
+
+<!-- This div is the end of the container -->
+</div>
+
+
+
+<!-- The link to the javaQuery page -->
+   <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>>
